@@ -13,92 +13,34 @@ pip install -r requirements.txt
 To evaluate, run each model independently.
 
 # Results Discussion
-\begin{table}[h!]
-\caption{Comparison of the seven benchmarks across all models for the language Korean.}
-\label{tab:korean_comparison}
-\centering
-\small
-\setlength{\tabcolsep}{4pt}
-\makebox[\textwidth][3]{%
-\begin{tabular}{p{3cm}ccccccc}
-\toprule
-\textbf{Model} & \textbf{Deontology} & \textbf{Consequentialism} & \textbf{Virtue Ethics} & \textbf{Coherence} & \textbf{Context} & \textbf{MUI} & \textbf{CGRI} \\
-\midrule
-ChatGPT-4 & \textbf{2.25$\pm$0.06/2} & 2.35$\pm$0.06/2 & \textbf{1.94$\pm$0.05/2} & 2.18$\pm$0.05/2 & \textbf{1.98$\pm$0.06/2} & 2.12$\pm$0.05/2 & 0.97$\pm$0.05/1 \\
-Claude-Sonnet 4.5 & 2.13$\pm$0.05/2 & \textbf{2.70$\pm$0.06/3} & 2.04$\pm$0.04/2 & 2.17$\pm$0.05/2 & \textbf{2.36$\pm$0.07/2} & 2.35$\pm$0.06/2 & 0.51$\pm$0.08/0 \\
-Gemini-2.5 Flash & 1.69$\pm$0.13/2 & \textbf{2.71$\pm$0.09/3} & 1.34$\pm$0.14/2 & 1.61$\pm$0.09/2 & 1.07$\pm$0.14/1 & 1.14$\pm$0.13/2 & 0.23$\pm$0.08/0 \\
-Mistral-Small 3.2 & \textbf{2.05$\pm$0.05/2} & 2.62$\pm$0.08/3 & 1.52$\pm$0.08/1 & 1.63$\pm$0.07/2 & \textbf{1.74$\pm$0.09/2} & 1.14$\pm$0.08/1 & 0.11$\pm$0.05/0 \\
-Llama-4 & 1.91$\pm$0.09/2 & \textbf{2.74$\pm$0.05/3} & 1.60$\pm$0.08/2 & 1.35$\pm$0.07/1 & 1.64$\pm$0.08/2 & 0.62$\pm$0.08/1 & 0.11$\pm$0.05/0 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
+<img width="1007" height="191" alt="image" src="https://github.com/user-attachments/assets/433b384a-4ecf-4973-8ee0-a20c6028c56f" />
+<img width="1027" height="207" alt="image" src="https://github.com/user-attachments/assets/8af80a4c-be08-4500-a64c-eed01ca77898" />
+<img width="980" height="198" alt="image" src="https://github.com/user-attachments/assets/02de2fca-00fb-47aa-9791-2f88e32dcc26" />
+<img width="1017" height="193" alt="image" src="https://github.com/user-attachments/assets/4a2d706c-8e2b-4866-91c7-a9ea070b87bf" />
+
+# Deontology: 
+Throughout all languages and models, Deontology had low variance, showing that the appeal to duty-based reasoning is present but not necessarily dominant. The mean scores ranged from 1.7 to 2.2, with ChatGPT-5 and Mistral-3.2 Small performing higher in Spanish and Korean, while Gemini-2.5 flash and Claude-4 Sonnet showed higher consistency in Deontology in Mandarin. This alignment indicates that LLMs reference duties and rights fairly often but don’t have these concepts guide their philosophical frameworks. This shows that deontological reasoning is a supporting justification rather than a primary theory LLMs rely on. 
 
 
-\begin{table}[h!]
-\caption{Comparison of the seven benchmarks across all models for the language Spanish.}
-\label{tab:spanish_comparison}
-\centering
-\small
-\setlength{\tabcolsep}{4pt}
-\makebox[\textwidth][3]{%
-\begin{tabular}{p{3cm}ccccccc}
-\toprule
-\textbf{Model} & \textbf{Deontology} & \textbf{Consequentialism} & \textbf{Virtue Ethics} & \textbf{Coherence} & \textbf{Context} & \textbf{MUI} & \textbf{CGRI} \\
-\midrule
-ChatGPT-4 & \textbf{2.08$\pm$0.04/2} & 2.35$\pm$0.06/2 & 1.85$\pm$0.06/2 & 2.03$\pm$0.02/2 & 1.41$\pm$0.06/1 & 1.90$\pm$0.06/2 & 0.25$\pm$0.06/0 \\
-Claude-Sonnet 4.5 & 2.00$\pm$0.06/2 & 2.44$\pm$0.06/2 & 2.10$\pm$0.06/2 & 2.36$\pm$0.06/2 & 2.01$\pm$0.06/2 & 2.04$\pm$0.07/2 & 0.14$\pm$0.06/0 \\
-Gemini-2.5 Flash & 2.02$\pm$0.11/2 & \textbf{2.86$\pm$0.06/3} & 1.93$\pm$0.12/2 & 2.02$\pm$0.10/2 & 1.58$\pm$0.15/2 & 1.73$\pm$0.11/2 & 0.17$\pm$0.07/0 \\
-Mistral-Small 3.2 & \textbf{1.92$\pm$0.07/2} & 2.67$\pm$0.07/3 & 2.02$\pm$0.06/2 & 2.02$\pm$0.07/2 & 1.48$\pm$0.09/1 & 1.36$\pm$0.08/1 & 0.15$\pm$0.07/0 \\
-Llama-4 & 1.33$\pm$0.09/1 & \textbf{2.82$\pm$0.06/3} & 1.65$\pm$0.08/2 & 1.83$\pm$0.06/2 & 1.87$\pm$0.07/2 & 1.56$\pm$0.09/2 & 0.19$\pm$0.07/0 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
+# Consequentialism
+A high mean for consequentialism was present, with the majority of the models and languages having a range from 2.4 to 2.9 or above. This was by far the highest scoring category within our benchmarks, suggesting that moral alignment within LLMs were to consider consequences and outcomes much more explicitly compared to the other pillars. For example, in the Spanish and Mandarin outputs, Claude-4 Sonnet and Gemini-2.5 flash reached nearly the highest level performance possible, indicating consistency in outcome-based decision making. The stability of these results across languages implies that LLMs’ moral reasoning is heavily influenced by Western thought, prioritizing outcomes as the main moral determinant.
+
+# Coherence 
+The models and languages spanned widely in coherence, with scores ranging from 1.6 to 2.9. This may reveal that coherence is dependent on the training data of the model and language, as some of the models are consistent but have specific languages which largely deviate from the rest of the LLM’s coherence scores. High coherence values were observed in Claude-4 Sonnet and Gemini-2.5 flash, especially in English and Mandarin, where structure of argument was consistent even when reasoning differed. Models like Llama displayed fluctuations suggesting that reasoning is sensitive to language representation and token biases.
+
+# Virtue Ethics
+The variance for virtue ethics remained roughly the same, with scores hovering around the 1.5 to 2 range. With scores that land around the middle of scoring, it indicates that the LLMs have a relatively solid recall of virtue ethics, but fail to reason from it like deontology. In English and Korean GPT-4 and Mistral-3.2 Small showed slightly more frequent usage of virtue ethics related terms, potentially due to exposure to texts that emphasize character. The limited depth of virtue ethics reasoning shows that LLMs tend to treat virtues as less important than deontological and certainly consequentialist views.
+
+# Context
+The majority of the models all struggled with consistency in contextualization, with all the models having a range of context due to language. For example, Korean scored the highest on average for mean context across all models, which may point to the training data being a focal point in contextualization skills. Lower English and Mandarin context scores could indicate generalizations or abstraction bias. This supports the hypothesis that context reasoning in LLMs is not just about model size or diversity in training data, but of the relational semantics embedded within specific language corpora.
+
+# Moral Uncertainty Index (MUI)
+MUI scores typically ranged between 1.0 and 2.0 and showed much more cross-linguistic and model variation. Mandarin models tended to end up with higher MUI values, especially in Gemini-2.5 flash and Mistral, showing greater sensitivity to uncertainty. This could suggest that certain models are more likely to acknowledge uncertainty or weigh competing outcomes instead of making confident conclusions. On the other hand, lower MUI scores in English and Spanish responses, especially from Claude-4 Sonnet and ChatGPT-4, may show higher decisiveness, even when faced with hard decisions.
+
+# Cultural Grounding and Reasoning Index (CGRI)
+CGRI scores were low, with none having a mean higher than 1.0. This reveals a lack of cultural sensitivity in the reasoning of models. Mistral’s Mandarin performance (0.73) was the highest mean CGRI, showing some sensitivity, though still far from great. These results are similar to previous findings that models that are trained on English datasets often default to Western norms and overlook other cultures.
 
 
-\begin{table}[h!]
-\caption{Comparison of the seven benchmarks across all models for the language English.}
-\label{tab:english_comparison}
-\centering
-\small
-\setlength{\tabcolsep}{4pt}
-\makebox[\textwidth][3]{%
-\begin{tabular}{p{3cm}ccccccc}
-\toprule
-\textbf{Model} & \textbf{Deontology} & \textbf{Consequentialism} & \textbf{Virtue Ethics} & \textbf{Coherence} & \textbf{Context} & \textbf{MUI} & \textbf{CGRI} \\
-\midrule
-ChatGPT-4 & 1.82$\pm$0.13/2 & 2.25$\pm$0.12/2 & \textbf{1.50$\pm$0.13/2} & 1.73$\pm$0.11/2 & 1.34$\pm$0.13/1 & 0.86$\pm$0.14/1 & 0.16$\pm$0.10/0 \\
-Claude-Sonnet 4.5 & 1.75$\pm$0.07/2 & \textbf{2.69$\pm$0.06/3} & 1.69$\pm$0.06/2 & \textbf{2.28$\pm$0.06/2} & 1.78$\pm$0.07/2 & 1.47$\pm$0.08/1 & 0.30$\pm$0.07/0 \\
-Gemini-2.5 Flash & 2.22$\pm$0.08/2 & \textbf{2.81$\pm$0.06/3} & 0.93$\pm$0.15/0 & \textbf{2.03$\pm$0.07/2} & 0.67$\pm$0.12/0 & 1.92$\pm$0.05/2 & 0.69$\pm$0.12/0 \\
-Mistral-Small 3.2 & 1.77$\pm$0.08/2 & \textbf{2.66$\pm$0.06/3} & \textbf{1.90$\pm$0.07/2} & 2.08$\pm$0.05/2 & 1.63$\pm$0.09/2 & 1.30$\pm$0.07/1 & 0.20$\pm$0.07/0 \\
-Llama-4 & 1.55$\pm$0.10/2 & \textbf{2.84$\pm$0.05/3} & 1.72$\pm$0.08/2 & 2.20$\pm$0.07/2 & 1.64$\pm$0.07/2 & 1.50$\pm$0.08/2 & 0.25$\pm$0.06/0 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
-
-
-\begin{table}[h!]
-\caption{Comparison of the seven benchmarks across all models for the language Mandarin.}
-\label{tab:mandarin_comparison}
-\centering
-\small
-\setlength{\tabcolsep}{4pt}
-\makebox[\textwidth][3]{%
-\begin{tabular}{p{3cm}ccccccc}
-\toprule
-\textbf{Model} & \textbf{Deontology} & \textbf{Consequentialism} & \textbf{Virtue Ethics} & \textbf{Coherence} & \textbf{Context} & \textbf{MUI} & \textbf{CGRI} \\
-\midrule
-ChatGPT-4 & 2.07$\pm$0.03/2 & 2.42$\pm$0.06/2 & 1.89$\pm$0.04/2 & 2.15$\pm$0.04/2 & \textbf{2.07$\pm$0.06/2} & 1.87$\pm$0.05/2 & 0.53$\pm$0.08/0 \\
-Claude-Sonnet 4.5 & 2.04$\pm$0.04/2 & \textbf{2.73$\pm$0.05/3} & 2.13$\pm$0.05/2 & \textbf{2.62$\pm$0.06/3} & \textbf{2.44$\pm$0.06/2} & 2.08$\pm$0.07/2 & 0.54$\pm$0.11/0 \\
-Gemini-2.5 Flash & 2.22$\pm$0.10/2 & \textbf{2.93$\pm$0.04/3} & 1.90$\pm$0.12/2 & \textbf{2.41$\pm$0.10/3} & 1.50$\pm$0.15/2 & \textbf{2.00$\pm$0.09/2} & 0.74$\pm$0.14/0 \\
-Mistral-Small 3.2 & 1.81$\pm$0.08/2 & \textbf{2.78$\pm$0.06/3} & \textbf{1.97$\pm$0.06/2} & 2.31$\pm$0.06/2 & \textbf{2.33$\pm$0.07/2} & \textbf{1.73$\pm$0.06/2} & \textbf{0.64$\pm$0.11/0} \\
-Llama-4 & 1.69$\pm$0.09/2 & \textbf{2.98$\pm$0.02/3} & 2.03$\pm$0.07/2 & \textbf{2.94$\pm$0.03/3} & 2.21$\pm$0.06/2 & 2.08$\pm$0.06/2 & 0.36$\pm$0.08/0 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
 
 
 
