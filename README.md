@@ -13,12 +13,12 @@ pip install -r requirements.txt
 To evaluate, run each model independently.
 
 # Results Discussion
-<img width="1007" height="191" alt="image" src="https://github.com/user-attachments/assets/433b384a-4ecf-4973-8ee0-a20c6028c56f" />
-<img width="1027" height="207" alt="image" src="https://github.com/user-attachments/assets/8af80a4c-be08-4500-a64c-eed01ca77898" />
-<img width="980" height="198" alt="image" src="https://github.com/user-attachments/assets/02de2fca-00fb-47aa-9791-2f88e32dcc26" />
-<img width="1017" height="193" alt="image" src="https://github.com/user-attachments/assets/4a2d706c-8e2b-4866-91c7-a9ea070b87bf" />
+<img width="1017" height="198" alt="image" src="https://github.com/user-attachments/assets/433b384a-4ecf-4973-8ee0-a20c6028c56f" />
+<img width="1017" height="198" alt="image" src="https://github.com/user-attachments/assets/8af80a4c-be08-4500-a64c-eed01ca77898" />
+<img width="1017" height="198" alt="image" src="https://github.com/user-attachments/assets/02de2fca-00fb-47aa-9791-2f88e32dcc26" />
+<img width="1017" height="198" alt="image" src="https://github.com/user-attachments/assets/4a2d706c-8e2b-4866-91c7-a9ea070b87bf" />
 
-# Deontology: 
+# Deontology 
 Throughout all languages and models, Deontology had low variance, showing that the appeal to duty-based reasoning is present but not necessarily dominant. The mean scores ranged from 1.7 to 2.2, with ChatGPT-5 and Mistral-3.2 Small performing higher in Spanish and Korean, while Gemini-2.5 flash and Claude-4 Sonnet showed higher consistency in Deontology in Mandarin. This alignment indicates that LLMs reference duties and rights fairly often but don’t have these concepts guide their philosophical frameworks. This shows that deontological reasoning is a supporting justification rather than a primary theory LLMs rely on. 
 
 
